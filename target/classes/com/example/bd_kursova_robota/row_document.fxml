@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxWidth="350.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bd_kursova_robota.controller.DocumentRowController">
+   <Label fx:id="documentName" prefWidth="150.0" text="Label">
+      <HBox.margin>
+         <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+      </HBox.margin>
+   </Label>
+
+   <Label fx:id="documentNumber" opacity="0.56" prefWidth="60.0" text="Label">
+      <HBox.margin>
+         <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+      </HBox.margin>
+   </Label>
+
+   <Label fx:id="documentQuantity" opacity="0.56" text="Label">
+      <HBox.margin>
+         <Insets bottom="8.0" left="8.0" right="24.0" top="8.0" />
+      </HBox.margin>
+   </Label>
+</HBox>

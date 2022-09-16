@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefWidth="350.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bd_kursova_robota.controller.ScoreCreatorController">
+    <GridPane maxWidth="350.0" prefWidth="350.0">
+
+    <children>
+
+    <Label fx:id="subjectLabel" text="Предмет">
+        <GridPane.margin>
+            <Insets left="24.0" />
+        </GridPane.margin>
+    </Label>
+
+    <ChoiceBox fx:id="subject" prefWidth="210.4" GridPane.columnIndex="1">
+        <GridPane.margin>
+            <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+        </GridPane.margin>
+    </ChoiceBox>
+
+        <Label fx:id="scoreLabel" text="Бал" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <Spinner fx:id="score" editable="true" prefWidth="105.2" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </Spinner>
+
+    </children>
+
+        <columnConstraints>
+            <ColumnConstraints maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+        </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+
+    </GridPane>
+   <padding>
+      <Insets top="8.0" />
+   </padding>
+</VBox>

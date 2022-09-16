@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox stylesheets="@x.css" prefWidth="350.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bd_kursova_robota.controller.ApplicationCreatorController">
+    <GridPane maxWidth="350.0" prefWidth="350.0">
+
+    <children>
+
+    <Label text="Рік подачі">
+        <GridPane.margin>
+            <Insets left="24.0" />
+        </GridPane.margin>
+    </Label>
+
+    <TextField fx:id="year" prefWidth="210.4" GridPane.columnIndex="1">
+        <GridPane.margin>
+            <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+        </GridPane.margin>
+    </TextField>
+
+        <Label text="Статус" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <HBox prefHeight="25.6" GridPane.columnIndex="1" GridPane.rowIndex="1">
+
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+
+            <children>
+
+                <RadioButton fx:id="statusAccepted" mnemonicParsing="false" prefHeight="25.6" text="Прийнято">
+                    <HBox.margin>
+                        <Insets right="20.0" />
+                    </HBox.margin>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="sex" />
+                    </toggleGroup>
+                </RadioButton>
+
+                <RadioButton fx:id="statusNotAccepted" selected="true" mnemonicParsing="false" prefHeight="25.6" text="Не прийнято" toggleGroup="$sex" />
+            </children>
+
+
+        </HBox>
+
+        <StackPane maxHeight="1.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="-Infinity" prefHeight="1.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;" GridPane.columnSpan="2" GridPane.rowIndex="2" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="24.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+            <VBox.margin>
+                <Insets left="24.0" right="24.0" />
+            </VBox.margin>
+        </StackPane>
+
+    </children>
+
+        <columnConstraints>
+            <ColumnConstraints maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+        </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+
+    </GridPane>
+
+    <ListView fx:id="list" prefHeight="135" VBox.vgrow="ALWAYS"  prefWidth="350" style="-fx-background-color: transparent;" />
+
+    <padding>
+      <Insets top="8.0" />
+   </padding>
+</VBox>

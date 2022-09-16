@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefWidth="350.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <GridPane maxWidth="350.0" prefWidth="350.0">
+
+    <children>
+
+    <Label text="Факультет">
+        <GridPane.margin>
+            <Insets left="24.0" />
+        </GridPane.margin>
+    </Label>
+
+    <ChoiceBox fx:id="department" prefWidth="210.4" GridPane.columnIndex="1">
+        <GridPane.margin>
+            <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+        </GridPane.margin>
+    </ChoiceBox>
+
+        <Label text="Спеціальність" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <ChoiceBox fx:id="specialty" prefWidth="210.4" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </ChoiceBox>
+
+        <Label text="Форма нав." GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <ChoiceBox fx:id="educationForm" prefWidth="210.4" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </ChoiceBox>
+
+        <Label text="Вартість, грн." GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <TextField fx:id="contractPrice" maxWidth="-Infinity" prefWidth="105.2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </TextField>
+
+        <Label text="Тривал, міс." GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <TextField fx:id="length" maxWidth="-Infinity" prefWidth="105.2" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </TextField>
+
+        <Label text="Кількість БМ" GridPane.rowIndex="5">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <TextField fx:id="bmCount" maxWidth="105.2" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </TextField>
+
+        <Label text="Кількість КМ" GridPane.rowIndex="6">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <TextField fx:id="kmCount" maxWidth="105.2" GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </TextField>
+
+        <Label text="Статус" GridPane.rowIndex="7">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <HBox prefHeight="25.6" GridPane.columnIndex="1" GridPane.rowIndex="7">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+
+            <children>
+
+                <RadioButton fx:id="statusActive" mnemonicParsing="false" prefHeight="25.6" selected="true" text="Активна">
+                    <HBox.margin>
+                        <Insets right="20.0" />
+                    </HBox.margin>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="sex" />
+                    </toggleGroup>
+                </RadioButton>
+
+                <RadioButton fx:id="statusInactive" mnemonicParsing="false" prefHeight="25.6" text="Неактивна" toggleGroup="$sex" />
+            </children>
+
+
+        </HBox>
+
+        <StackPane maxHeight="1.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="-Infinity" prefHeight="1.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;" GridPane.columnSpan="2" GridPane.rowIndex="8" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="24.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+            <VBox.margin>
+                <Insets left="24.0" right="24.0" />
+            </VBox.margin>
+        </StackPane>
+
+        <HBox alignment="TOP_RIGHT" GridPane.columnSpan="2" GridPane.rowIndex="9">
+            <GridPane.margin>
+                <Insets bottom="16.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+            <children>
+                <Button fx:id="buttonCancel" mnemonicParsing="false" onAction="#onCancel" text="Скасувати">
+                    <HBox.margin>
+                        <Insets right="8.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="buttonOk" defaultButton="true" mnemonicParsing="false" onAction="#onSave" text="Зберегти" />
+            </children>
+            <VBox.margin>
+                <Insets bottom="16.0" right="24.0" top="8.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+
+        <columnConstraints>
+            <ColumnConstraints maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+        </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+
+    </GridPane>
+   <padding>
+      <Insets top="8.0" />
+   </padding>
+</VBox>

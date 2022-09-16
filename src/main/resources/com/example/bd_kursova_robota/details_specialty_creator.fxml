@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefWidth="350.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bd_kursova_robota.controller.SpecialtyCreatorController">
+    <GridPane maxWidth="350.0" prefWidth="350.0">
+
+    <children>
+
+        <Label fx:id="codeLabel" text="Код">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <TextField fx:id="code" prefWidth="210.4" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </TextField>
+
+    <Label fx:id="nameLabel" text="Назва" GridPane.rowIndex="1">
+        <GridPane.margin>
+            <Insets left="24.0" />
+        </GridPane.margin>
+    </Label>
+
+    <TextField fx:id="name" prefWidth="210.4" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <GridPane.margin>
+            <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+        </GridPane.margin>
+    </TextField>
+
+        <StackPane maxHeight="1.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="-Infinity" prefHeight="1.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;" GridPane.columnSpan="2" GridPane.rowIndex="2" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="24.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </StackPane>
+
+        <Label fx:id="coefficientColumnLabel" prefWidth="60.0" text="Коефіцієнт" textAlignment="RIGHT" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets left="266.0" top="8.0" />
+            </GridPane.margin>
+        </Label>
+
+        <Label fx:id="subject1Label" text="Предмет №1" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <HBox GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <ChoiceBox fx:id="subject1" prefWidth="134.0">
+                <GridPane.margin>
+                    <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                </GridPane.margin>
+                <HBox.margin>
+                    <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+                </HBox.margin>
+            </ChoiceBox>
+
+            <Spinner fx:id="subject1Coefficient" editable="true" prefWidth="60.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+                <GridPane.margin>
+                    <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                </GridPane.margin>
+                <HBox.margin>
+                    <Insets bottom="8.0" top="8.0" />
+                </HBox.margin>
+            </Spinner>
+        </HBox>
+
+
+        <Label fx:id="subject2Label" text="Предмет №2" GridPane.rowIndex="5">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <HBox GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <ChoiceBox fx:id="subject2" prefWidth="134.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                <GridPane.margin>
+                    <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                </GridPane.margin>
+                <HBox.margin>
+                    <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+                </HBox.margin>
+            </ChoiceBox>
+
+            <Spinner fx:id="subject2Coefficient" editable="true" prefWidth="60.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4">
+                <GridPane.margin>
+                    <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                </GridPane.margin>
+                <HBox.margin>
+                    <Insets bottom="8.0" top="8.0" />
+                </HBox.margin>
+            </Spinner>
+        </HBox>
+
+        <Label fx:id="subject3Label" text="Предмет №2" GridPane.rowIndex="6">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <HBox GridPane.columnIndex="1" GridPane.rowIndex="6">
+            <ChoiceBox fx:id="subject3" prefWidth="134.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                <GridPane.margin>
+                    <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                </GridPane.margin>
+                <HBox.margin>
+                    <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+                </HBox.margin>
+            </ChoiceBox>
+
+            <Spinner fx:id="subject3Coefficient" editable="true" prefWidth="60.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6">
+                <GridPane.margin>
+                    <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                </GridPane.margin>
+                <HBox.margin>
+                    <Insets bottom="8.0" top="8.0" />
+                </HBox.margin>
+            </Spinner>
+        </HBox>
+
+    </children>
+
+        <columnConstraints>
+            <ColumnConstraints maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+        </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+
+    </GridPane>
+   <padding>
+      <Insets top="8.0" />
+   </padding>
+</VBox>

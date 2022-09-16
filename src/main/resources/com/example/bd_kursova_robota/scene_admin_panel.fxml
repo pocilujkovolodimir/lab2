@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bd_kursova_robota.controller.MainPanelController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="dictionariesMenu" mnemonicParsing="false" text="Довідники">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#openDepartmentsEditor" text="Факультети" />
+              <MenuItem mnemonicParsing="false" onAction="#openSpecialtiesEditor" text="Спеціальності" />
+              <MenuItem mnemonicParsing="false" onAction="#openEducationFormsEditor" text="Форми навчання" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#openPrivilegeEditor" text="Пільги" />
+              <MenuItem mnemonicParsing="false" onAction="#openRegionEditor" text="Регіони" />
+                <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#openSubjectsEditor" text="Предмети ЗНО" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" onAction="#openDocumentTypesEditor" text="Види документів" />
+            </items>
+          </Menu>
+          <Menu fx:id="usersMenu" mnemonicParsing="false" text="Користувачі">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#openUsersEditor" text="Редагувати..." />
+            </items>
+          </Menu>
+            <Menu fx:id="updateMenu" mnemonicParsing="false" text="Оновлення коментарів">
+              <items>
+                <MenuItem fx:id="commentApplicant" mnemonicParsing="false" onAction="#commentApplicant" text="10.1 Абітурієнт з найвищим середнім балом ЗНО" />
+                  <MenuItem fx:id="commentOffer" mnemonicParsing="false" onAction="#commentOffer" text="10.2 Найпопулярніша вступна пропозиція" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+        </columns>
+      </TableView>
+   </center>
+   <left>
+      <TreeView fx:id="treeView" prefHeight="200.0" showRoot="false" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></TreeView>
+   </left>
+   <right>
+      <StackPane fx:id="filterParent" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></StackPane>
+   </right>
+</BorderPane>

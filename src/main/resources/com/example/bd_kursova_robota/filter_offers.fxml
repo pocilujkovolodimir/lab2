@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefWidth="200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bd_kursova_robota.controller.OffersFilterController">
+   <children>
+      <Label text="Фільтр записів">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" top="16.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label text="За факультетом:">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+         </VBox.margin>
+      </Label>
+      <ChoiceBox fx:id="department" prefWidth="168.0">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" />
+         </VBox.margin>
+      </ChoiceBox>
+
+
+      <StackPane maxHeight="2.0" maxWidth="200.0" minHeight="0.0" minWidth="0.0" prefHeight="1.0" prefWidth="200.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+         </VBox.margin></StackPane>
+
+      <Label text="За спеціальністю:">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+         </VBox.margin>
+      </Label>
+      <ChoiceBox fx:id="specialty" prefWidth="168.0">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" />
+         </VBox.margin>
+      </ChoiceBox>
+
+
+      <StackPane maxHeight="2.0" maxWidth="200.0" minHeight="0.0" minWidth="0.0" prefHeight="1.0" prefWidth="200.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+         </VBox.margin></StackPane>
+
+      <Label text="За формою навчання:">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+         </VBox.margin>
+      </Label>
+      <ChoiceBox fx:id="educationForm" prefWidth="168.0">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" />
+         </VBox.margin>
+      </ChoiceBox>
+
+
+      <StackPane maxHeight="2.0" maxWidth="200.0" minHeight="0.0" minWidth="0.0" prefHeight="1.0" prefWidth="200.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+         </VBox.margin></StackPane>
+
+      <Label text="За вартістю контракту:">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="priceFrom" promptText="Від">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" />
+         </VBox.margin>
+      </TextField>
+      <TextField fx:id="priceTo" promptText="До">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" />
+         </VBox.margin>
+      </TextField>
+      <StackPane maxHeight="2.0" maxWidth="200.0" minHeight="0.0" minWidth="0.0" prefHeight="1.0" prefWidth="200.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" top="8.0" />
+         </VBox.margin></StackPane>
+
+
+
+      <Button fx:id="apply" defaultButton="true" maxWidth="200.0" mnemonicParsing="false" onAction="#onApply" text="Застосувати">
+         <VBox.margin>
+            <Insets bottom="8.0" left="16.0" right="16.0" top="16.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="clear" maxWidth="200.0" mnemonicParsing="false" onAction="#onClear" text="Очистити">
+         <VBox.margin>
+            <Insets bottom="16.0" left="16.0" right="16.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>

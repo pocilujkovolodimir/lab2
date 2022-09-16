@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefWidth="270.0" spacing="16.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bd_kursova_robota.HelloController">
+    <padding>
+        <Insets bottom="24.0" left="24.0" right="24.0" top="16.0" />
+    </padding>
+   <Label opacity="0.56" text="Вступна комісія ВУЗу">
+      <font>
+         <Font name="System Italic" size="12.0" />
+      </font>
+   </Label>
+   <Label text="В Х І Д">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font>
+   </Label>
+   <Label text="Введіть ваш логін і пароль та натисніть «Увійти»" textAlignment="CENTER" wrapText="true" />
+   <TextField fx:id="signInLogin" promptText="Логін" />
+   <PasswordField fx:id="signInPassword" promptText="Пароль" />
+   <Button fx:id="signInButton" defaultButton="true" mnemonicParsing="false" onAction="#signIn" prefWidth="300.0" text="Увійти" />
+</VBox>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxWidth="350.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bd_kursova_robota.controller.DetailsController">
+    <children>
+<GridPane maxWidth="350.0" prefWidth="350.0">
+
+    <children>
+
+        <Label fx:id="nameLabel" text="Ім'я">
+            <GridPane.margin>
+                <Insets left="24.0" top="8.0" />
+            </GridPane.margin>
+        </Label>
+
+        <TextField fx:id="name" GridPane.columnIndex="1">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="16.0" />
+            </GridPane.margin>
+        </TextField>
+
+        <Label text="По-батькові" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <TextField fx:id="patronymic" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </TextField>
+
+        <Label text="Прізвище" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <TextField fx:id="surname" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </TextField>
+
+        <Label text="Дата народж." GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <HBox GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+            <children>
+
+                <TextField fx:id="birthDay" prefWidth="56.8" promptText="день">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </TextField>
+
+                <Label prefHeight="25.6" text="/" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="7.6" right="7.6" />
+                    </HBox.margin>
+                </Label>
+
+                <TextField fx:id="birthMonth" prefWidth="56.8" promptText="місяць">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </TextField>
+
+                <Label prefHeight="25.6" text="/" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="7.6" right="7.6" />
+                    </HBox.margin>
+                </Label>
+
+                <TextField fx:id="birthYear" prefWidth="56.8" promptText="рік" HBox.hgrow="ALWAYS">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </TextField>
+
+            </children>
+
+
+        </HBox>
+
+        <Label text="Стать" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <HBox prefHeight="25.6" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+
+            <children>
+
+                <RadioButton fx:id="sxFemale" mnemonicParsing="false" prefHeight="25.6" selected="true" text="Жіноча">
+                    <HBox.margin>
+                        <Insets right="20.0" />
+                    </HBox.margin>
+                    <toggleGroup>
+                        <ToggleGroup fx:id="sex" />
+                    </toggleGroup>
+                </RadioButton>
+
+                <RadioButton fx:id="sxMale" mnemonicParsing="false" prefHeight="25.6" text="Чоловіча" toggleGroup="$sex" />
+            </children>
+
+
+        </HBox>
+
+        <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="5">
+            <GridPane.margin>
+                <Insets bottom="8.0" top="8.0" />
+            </GridPane.margin>
+        </Separator>
+
+
+        <Label text="Область" GridPane.rowIndex="6">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <ChoiceBox fx:id="addressRegion" prefWidth="210.4" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </ChoiceBox>
+
+        <Label text="Місто" GridPane.rowIndex="7">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <TextField fx:id="addressCity" GridPane.columnIndex="1" GridPane.rowIndex="7">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </TextField>
+
+        <Label text="Вулиця" GridPane.rowIndex="8">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <TextField fx:id="addressStreet" GridPane.columnIndex="1" GridPane.rowIndex="8">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </TextField>
+
+        <Label text="Дім / кварт." GridPane.rowIndex="9">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <HBox GridPane.columnIndex="1" GridPane.rowIndex="9">
+            <GridPane.margin>
+                <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+            <children>
+
+                <TextField fx:id="addressBuilding" prefWidth="56.8" promptText="дім">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </TextField>
+
+                <Label prefHeight="25.6" text="/" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="7.6" right="7.6" />
+                    </HBox.margin>
+                </Label>
+
+                <TextField fx:id="addressApt" prefWidth="56.8" promptText="кварт.">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </TextField>
+            </children>
+
+
+        </HBox>
+
+        <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="10">
+            <GridPane.margin>
+                <Insets bottom="8.0" top="8.0" />
+            </GridPane.margin>
+        </Separator>
+
+        <Label text="Середній бал атестата" wrapText="true" GridPane.rowIndex="11">
+            <GridPane.margin>
+                <Insets left="24.0" />
+            </GridPane.margin>
+        </Label>
+
+        <TextField fx:id="avg" maxWidth="56.8" prefWidth="56.8" GridPane.columnIndex="1" GridPane.rowIndex="11">
+            <GridPane.margin>
+                <Insets bottom="16.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+        </TextField>
+
+        <Separator prefWidth="200.0" GridPane.columnSpan="2" GridPane.rowIndex="12">
+            <GridPane.margin>
+                <Insets bottom="8.0" top="8.0" />
+            </GridPane.margin>
+        </Separator>
+
+        <HBox alignment="TOP_RIGHT" GridPane.columnSpan="2" GridPane.rowIndex="13">
+            <GridPane.margin>
+                <Insets bottom="16.0" left="16.0" right="24.0" top="8.0" />
+            </GridPane.margin>
+
+        </HBox>
+
+    </children>
+
+    <columnConstraints>
+        <ColumnConstraints maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="ALWAYS" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints minHeight="10.0" />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
+      </children>
+</StackPane>

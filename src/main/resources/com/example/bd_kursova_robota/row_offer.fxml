@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxWidth="350.0" spacing="2.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bd_kursova_robota.controller.OfferRowController">
+
+   <Label fx:id="secondary" text="ІКС – Заочно">
+   </Label>
+   <Label fx:id="primary" text="Бухгалтер">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+
+   <Label fx:id="tertiary" opacity="0.56" text="Вартість: 15000 грн. – БМ/КМ: 45/60">
+
+   </Label>
+   <padding>
+      <Insets bottom="8.0" left="24.0" right="24.0" top="8.0" />
+   </padding>
+</VBox>

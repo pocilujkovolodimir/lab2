@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+
+       <VBox fx:id="panelRoot" maxWidth="350.0" stylesheets="@x.css">
+         <children>
+      
+            <TabPane fx:id="tabPane" maxWidth="350.0" stylesheets="@x.css" tabClosingPolicy="UNAVAILABLE">
+      
+              <tabs>
+      
+      
+                <Tab text="Анкетні дані">
+                  <content>
+                      <GridPane maxWidth="350.0" prefWidth="350.0">
+      
+                          <children>
+      
+                              <Label fx:id="nameLabel" text="Ім'я">
+                                  <GridPane.margin>
+                                      <Insets left="24.0" top="8.0" />
+                                  </GridPane.margin>
+                              </Label>
+      
+                              <TextField fx:id="name" GridPane.columnIndex="1">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="16.0" right="24.0" top="16.0" />
+                                  </GridPane.margin>
+                              </TextField>
+      
+                              <Label text="По-батькові" GridPane.rowIndex="1">
+                                  <GridPane.margin>
+                                      <Insets left="24.0" />
+                                  </GridPane.margin>
+                              </Label>
+      
+                              <TextField fx:id="patronymic" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                              </TextField>
+      
+                              <Label text="Прізвище" GridPane.rowIndex="2">
+                                  <GridPane.margin>
+                                      <Insets left="24.0" />
+                                  </GridPane.margin>
+                              </Label>
+      
+                              <TextField fx:id="surname" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                              </TextField>
+      
+                              <Label text="Дата народж." GridPane.rowIndex="3">
+                                  <GridPane.margin>
+                                      <Insets left="24.0" />
+                                  </GridPane.margin>
+                              </Label>
+      
+                              <HBox GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                                  <children>
+      
+                                      <TextField fx:id="birthDay" prefWidth="56.8" promptText="день">
+                                          <HBox.margin>
+                                              <Insets />
+                                          </HBox.margin>
+                                      </TextField>
+      
+                                      <Label prefHeight="25.6" text="/" textAlignment="CENTER">
+                                          <HBox.margin>
+                                              <Insets left="7.6" right="7.6" />
+                                          </HBox.margin>
+                                      </Label>
+      
+                                      <TextField fx:id="birthMonth" prefWidth="56.8" promptText="місяць">
+                                          <HBox.margin>
+                                              <Insets />
+                                          </HBox.margin>
+                                      </TextField>
+      
+                                      <Label prefHeight="25.6" text="/" textAlignment="CENTER">
+                                          <HBox.margin>
+                                              <Insets left="7.6" right="7.6" />
+                                          </HBox.margin>
+                                      </Label>
+      
+                                      <TextField fx:id="birthYear" prefWidth="56.8" promptText="рік" HBox.hgrow="ALWAYS">
+                                          <HBox.margin>
+                                              <Insets />
+                                          </HBox.margin>
+                                      </TextField>
+      
+                                  </children>
+      
+      
+                              </HBox>
+      
+                              <Label text="Стать" GridPane.rowIndex="4">
+                                  <GridPane.margin>
+                                      <Insets left="24.0" />
+                                  </GridPane.margin>
+                              </Label>
+      
+                              <HBox prefHeight="25.6" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+      
+                                  <children>
+      
+                                      <RadioButton fx:id="sxFemale" mnemonicParsing="false" prefHeight="25.6" selected="true" text="Жіноча">
+                                          <HBox.margin>
+                                              <Insets right="20.0" />
+                                          </HBox.margin>
+                                          <toggleGroup>
+                                              <ToggleGroup fx:id="sex" />
+                                          </toggleGroup>
+                                      </RadioButton>
+      
+                                      <RadioButton fx:id="sxMale" mnemonicParsing="false" prefHeight="25.6" text="Чоловіча" toggleGroup="$sex" />
+                                  </children>
+      
+      
+                              </HBox>
+      
+      
+      
+      
+                              <StackPane maxHeight="1.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="-Infinity" prefHeight="1.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;" GridPane.columnSpan="2" GridPane.rowIndex="5" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="24.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                              </StackPane>
+      
+                              <Label text="Область" GridPane.rowIndex="6">
+                                  <GridPane.margin>
+                                      <Insets left="24.0" />
+                                  </GridPane.margin>
+                              </Label>
+      
+                              <ChoiceBox fx:id="addressRegion" prefWidth="210.4" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                              </ChoiceBox>
+      
+                              <Label text="Місто" GridPane.rowIndex="7">
+                                  <GridPane.margin>
+                                      <Insets left="24.0" />
+                                  </GridPane.margin>
+                              </Label>
+      
+                              <TextField fx:id="addressCity" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                              </TextField>
+      
+                              <Label text="Вулиця" GridPane.rowIndex="8">
+                                  <GridPane.margin>
+                                      <Insets left="24.0" />
+                                  </GridPane.margin>
+                              </Label>
+      
+                              <TextField fx:id="addressStreet" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                              </TextField>
+      
+                              <Label text="Дім / кварт." GridPane.rowIndex="9">
+                                  <GridPane.margin>
+                                      <Insets left="24.0" />
+                                  </GridPane.margin>
+                              </Label>
+      
+                              <HBox GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                                  <children>
+      
+                                      <TextField fx:id="addressBuilding" prefWidth="56.8" promptText="дім">
+                                          <HBox.margin>
+                                              <Insets />
+                                          </HBox.margin>
+                                      </TextField>
+      
+                                      <Label prefHeight="25.6" text="/" textAlignment="CENTER">
+                                          <HBox.margin>
+                                              <Insets left="7.6" right="7.6" />
+                                          </HBox.margin>
+                                      </Label>
+      
+                                      <TextField fx:id="addressApt" prefWidth="56.8" promptText="кварт.">
+                                          <HBox.margin>
+                                              <Insets />
+                                          </HBox.margin>
+                                      </TextField>
+                                  </children>
+      
+      
+                              </HBox>
+      
+      
+      
+                              <StackPane maxHeight="1.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="-Infinity" prefHeight="1.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;" GridPane.columnSpan="2" GridPane.rowIndex="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="24.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                              </StackPane>
+      
+                              <Label text="Середній бал атестата" wrapText="true" GridPane.rowIndex="11">
+                                  <GridPane.margin>
+                                      <Insets left="24.0" />
+                                  </GridPane.margin>
+                              </Label>
+      
+                              <TextField fx:id="avg" maxWidth="56.8" prefWidth="56.8" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                                  <GridPane.margin>
+                                      <Insets bottom="16.0" left="16.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                              </TextField>
+      
+      
+                              <StackPane maxHeight="1.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="-Infinity" prefHeight="1.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;" GridPane.columnSpan="2" GridPane.rowIndex="12" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="24.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                              </StackPane>
+      
+
+                          </children>
+      
+                          <columnConstraints>
+                              <ColumnConstraints maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints minHeight="10.0" />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                          </rowConstraints>
+                      </GridPane>
+                  </content>
+                </Tab>
+      
+                <Tab text="ЗНО">
+                  <content>
+                      <VBox maxWidth="350.0" minHeight="0.0" minWidth="0.0" prefWidth="350.0" stylesheets="@x.css">
+                          <children>
+                              <HBox maxWidth="350.0">
+                                  <Label prefWidth="150.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 1 0 0;" text="Предмет">
+                                      <HBox.margin>
+                                          <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+                                      </HBox.margin>
+                                  </Label>
+                                  <Label text="Бал">
+                                      <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="24.0" top="8.0" />
+                                      </HBox.margin>
+                                  </Label>
+                                  <padding>
+                                      <Insets bottom="8.0" top="8.0" />
+                                  </padding>
+                              </HBox>
+      
+                              <ListView fx:id="list_eie" prefHeight="135" prefWidth="200.0" style="-fx-background-color: transparent;" />
+      
+                              <StackPane maxHeight="1.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="-Infinity" prefHeight="1.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;" GridPane.columnSpan="2" GridPane.rowIndex="12" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="24.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                                 <VBox.margin>
+                                    <Insets bottom="8.0" left="24.0" right="24.0" />
+                                 </VBox.margin>
+                              </StackPane>
+      
+                              <GridPane maxWidth="350.0" prefWidth="350.0">
+      
+                                  <children>
+      
+                                      <Label fx:id="certificateNumberLabel" text="№ сертиф.">
+                                          <GridPane.margin>
+                                              <Insets left="24.0" />
+                                          </GridPane.margin>
+                                      </Label>
+      
+                              <TextField fx:id="certificateNumber" prefWidth="210.4" GridPane.columnIndex="1">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                              </TextField>
+      
+                              <Label fx:id="certificatePasswordLabel" text="PIN-код" GridPane.rowIndex="1">
+                                  <GridPane.margin>
+                                      <Insets left="24.0" />
+                                  </GridPane.margin>
+                              </Label>
+      
+                              <TextField fx:id="certificatePassword" promptText="****" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                              </TextField>
+      
+                          </children>
+      
+                          <columnConstraints>
+                              <ColumnConstraints maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="ALWAYS" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                          </rowConstraints>
+      
+                      </GridPane>
+      
+                          </children>
+                      </VBox>
+                  </content>
+                </Tab>
+      
+                  <Tab text="Документи">
+                      <content>
+                          <VBox maxWidth="350.0" minHeight="0.0" minWidth="0.0" prefWidth="350.0" stylesheets="@x.css">
+                               <children>
+                                   <HBox maxWidth="350.0">
+                                       <Label prefWidth="150.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 1 0 0;" text="Назва">
+                                           <HBox.margin>
+                                               <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+                                           </HBox.margin>
+                                       </Label>
+      
+                                       <Label prefWidth="60.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 1 0 0;" text="Номер">
+                                           <HBox.margin>
+                                               <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                           </HBox.margin>
+                                       </Label>
+      
+                                       <Label text="К-сть">
+                                           <HBox.margin>
+                                               <Insets bottom="8.0" left="8.0" right="24.0" top="8.0" />
+                                           </HBox.margin>
+                                       </Label>
+                                 <padding>
+                                    <Insets bottom="8.0" top="8.0" />
+                                 </padding>
+                                   </HBox>
+      
+                                   <ListView fx:id="list" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS" />
+                               </children>
+                          </VBox>
+                      </content>
+                  </Tab>
+      
+                  <Tab text="Заяви">
+                      <VBox maxWidth="350.0" minHeight="0.0" minWidth="0.0" prefWidth="350.0" stylesheets="@x.css">
+                          <children>
+      
+                              <GridPane maxWidth="350.0" prefWidth="350.0">
+      
+                                  <children>
+      
+                                      <Label fx:id="privilegeLabel" text="Пільга">
+                                          <GridPane.margin>
+                                              <Insets left="24.0" />
+                                          </GridPane.margin>
+                                      </Label>
+      
+                                      <ChoiceBox fx:id="privilege" prefWidth="210.4" GridPane.columnIndex="1">
+                                          <GridPane.margin>
+                                              <Insets bottom="8.0" left="16.0" right="24.0" top="8.0" />
+                                          </GridPane.margin>
+                                      </ChoiceBox>
+      
+                                  </children>
+      
+                                  <columnConstraints>
+                                      <ColumnConstraints maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                                      <ColumnConstraints hgrow="ALWAYS" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" />
+                                  </columnConstraints>
+                                  <rowConstraints>
+                                      <RowConstraints />
+                                      <RowConstraints />
+                                      <RowConstraints />
+                                  </rowConstraints>
+                              <VBox.margin>
+                                 <Insets bottom="8.0" top="8.0" />
+                              </VBox.margin>
+      
+                              </GridPane>
+      
+      
+                              <StackPane maxHeight="1.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="-Infinity" prefHeight="1.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;" GridPane.columnSpan="2" GridPane.rowIndex="12" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+                                  <GridPane.margin>
+                                      <Insets bottom="8.0" left="24.0" right="24.0" top="8.0" />
+                                  </GridPane.margin>
+                                  <VBox.margin>
+                                      <Insets left="24.0" right="24.0" />
+                                  </VBox.margin>
+                              </StackPane>
+      
+      
+                              <HBox maxWidth="350.0">
+                                  <Label prefWidth="150.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 1 0 0;" text="Спеціальність">
+                                      <HBox.margin>
+                                          <Insets bottom="8.0" left="24.0" right="8.0" top="8.0" />
+                                      </HBox.margin>
+                                  </Label>
+      
+                                  <Label prefWidth="60.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 1 0 0;" text="Рік">
+                                      <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                                      </HBox.margin>
+                                  </Label>
+      
+                                  <Label text="Статус">
+                                      <HBox.margin>
+                                          <Insets bottom="8.0" left="8.0" right="24.0" top="8.0" />
+                                      </HBox.margin>
+                                  </Label>
+                                  <padding>
+                                      <Insets bottom="8.0" top="8.0" />
+                                  </padding>
+                              </HBox>
+      
+                              <ListView fx:id="listAdm" prefHeight="135" prefWidth="200.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS" />
+      
+      
+      
+                          </children>
+                      </VBox>
+                  </Tab>
+      
+      
+              </tabs>
+               <VBox.margin>
+                  <Insets top="6.0" />
+               </VBox.margin>
+            </TabPane>
+
+             <HBox alignment="TOP_RIGHT" GridPane.columnSpan="2" GridPane.rowIndex="13">
+                 <GridPane.margin>
+                     <Insets bottom="16.0" left="16.0" right="24.0" top="8.0" />
+                 </GridPane.margin>
+                 <children>
+                     <Button fx:id="buttonCancel" mnemonicParsing="false" onAction="#onCancel" text="Скасувати">
+                         <HBox.margin>
+                             <Insets right="8.0" />
+                         </HBox.margin>
+                     </Button>
+                     <Button fx:id="buttonOk" defaultButton="true" mnemonicParsing="false" onAction="#onSave" text="Зберегти" />
+                 </children>
+               <VBox.margin>
+                  <Insets bottom="16.0" right="24.0" top="8.0" />
+               </VBox.margin>
+             </HBox>
+
+         </children></VBox>
+      <VBox fx:id="panelDetails" maxWidth="350.0" visible="false">
+         <children>
+            <StackPane>
+                <children>
+                  <Label fx:id="detailsTitle" style="-fx-font-weight: bold;" text="Label" />
+                    <Button fx:id="buttonDetailsCancel" mnemonicParsing="false" onAction="#onDetailsCancel" text="Скасувати" StackPane.alignment="TOP_LEFT">
+                        <HBox.margin>
+                            <Insets right="8.0" />
+                        </HBox.margin>
+                    </Button>
+                    <Button fx:id="buttonDetailsOk" defaultButton="true" mnemonicParsing="false" onAction="#onDetailsDone" prefWidth="72.0" text="Готово" StackPane.alignment="TOP_RIGHT" />
+                </children>
+               <VBox.margin>
+                  <Insets left="24.0" right="24.0" top="8.0" />
+               </VBox.margin>
+            </StackPane>
+             <StackPane fx:id="panelDetailsContent" prefHeight="150.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </children>
+</StackPane>

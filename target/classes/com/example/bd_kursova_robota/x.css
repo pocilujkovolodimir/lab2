@@ -1,0 +1,62 @@
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+     -fx-border-width: 0;
+     -fx-border-color: transparent;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-effect: null;
+    -fx-background-color: #00000000;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: transparent transparent #bdbdbd transparent;
+    -fx-border-insets: 0 24 0 24;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 0 0;
+    -fx-padding: 0 24 0 24; /* overridden as 5 2 0 0 */
+}
+
+
+.tab-pane .tab
+{
+-fx-effect: null;
+    -fx-background-color: #00000000;
+    -fx-border-width: 0 0 2.5 0;
+       -fx-border-color: transparent transparent transparent transparent;
+}
+.tab{
+    -fx-background-insets: 0,0,0,0;
+}
+.tab-pane .tab:selected
+{
+   -fx-background-color: #00000000;
+   -fx-border-width: 0 0 2.5 0;
+   -fx-border-color: transparent transparent #9DB3BD transparent;
+   -fx-font-weight: bold;
+}
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-padding: 2 12 2 12;
+}
+
+.list-cell{
+-fx-padding: 0;
+}
+
+.list-cell:odd{
+-fx-background-color: transparent;
+}
+
+.list-cell:odd:selected{
+-fx-background-color: #9DB3BD;
+}
+
+.list-cell:even{
+-fx-background-color: transparent;
+}
+
+.list-cell:even:selected{
+-fx-background-color: #9DB3BD;
+}
+
+
+.list-view, .split-pane { -fx-background-insets: 0; -fx-padding: 0; }

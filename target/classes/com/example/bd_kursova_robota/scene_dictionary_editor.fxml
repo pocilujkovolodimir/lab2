@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="407.6" prefWidth="350.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+
+    <VBox fx:id="panelRoot" maxWidth="350.0" stylesheets="@list_dict.css">
+        <StackPane.margin>
+            <Insets />
+        </StackPane.margin>
+      <children>
+
+
+
+         <ListView fx:id="list" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+            <VBox.margin>
+               <Insets top="4.0" />
+            </VBox.margin></ListView>
+
+          <StackPane maxHeight="1.0" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="-Infinity" prefHeight="1.0" style="-fx-border-color: #c7c7c7; -fx-border-width: 0 0 1 0;" GridPane.columnSpan="2" GridPane.rowIndex="12" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+              <GridPane.margin>
+                  <Insets left="24.0" right="24.0" />
+              </GridPane.margin>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+          </StackPane>
+
+          <StackPane>
+              <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#onAdd" text="Додати" StackPane.alignment="BOTTOM_LEFT" />
+
+              <HBox alignment="TOP_RIGHT" maxWidth="200.0" prefWidth="100.0" GridPane.columnSpan="2" GridPane.rowIndex="13" StackPane.alignment="BOTTOM_RIGHT">
+              <GridPane.margin>
+                  <Insets bottom="16.0" left="16.0" right="24.0" top="8.0" />
+              </GridPane.margin>
+              <children>
+                  <Button fx:id="buttonCancel" mnemonicParsing="false" onAction="#onCancel" text="Скасувати">
+                      <HBox.margin>
+                          <Insets right="8.0" />
+                      </HBox.margin>
+                  </Button>
+
+
+                  <Button fx:id="buttonOk" defaultButton="true" mnemonicParsing="false" onAction="#onSave" text="Зберегти" />
+              </children>
+            <VBox.margin>
+               <Insets bottom="16.0" right="24.0" top="16.0" />
+            </VBox.margin>
+          </HBox>
+            <VBox.margin>
+               <Insets bottom="16.0" left="24.0" right="24.0" top="16.0" />
+            </VBox.margin>
+          </StackPane>
+      </children>
+    </VBox>
+
+    <VBox fx:id="panelDetails" maxWidth="350.0" visible="false">
+        <children>
+            <StackPane>
+
+
+                <Label fx:id="detailsTitle" style="-fx-font-weight: bold;" text="Label" />
+
+                <Button fx:id="buttonDetailsCancel" mnemonicParsing="false" onAction="#onDetailsCancel" text="Скасувати" StackPane.alignment="TOP_LEFT">
+
+                </Button>
+
+                <Button fx:id="buttonDetailsOk" defaultButton="true" mnemonicParsing="false" onAction="#onDetailsDone" prefWidth="72.0" text="Готово" StackPane.alignment="TOP_RIGHT" />
+
+
+                <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <padding>
+               <Insets left="24.0" right="24.0" top="8.0" />
+            </padding>
+
+            </StackPane>
+            <StackPane fx:id="panelDetailsContent" prefHeight="150.0" VBox.vgrow="ALWAYS" />
+        </children>
+    </VBox>
+
+</StackPane>
